@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  padding: 50px;
+  padding: 3.7rem;
   font: 1rem/1.625 'Roboto', Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -22,11 +22,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(7, 66, 114, 0.767);
+}
+
+h1 {
+  font-size: 2.75rem;
 }
 
 a {
-  color: #00B7FF;
+  color: rgba(201, 101, 214, 0.911);
 }
 
 blockquote {

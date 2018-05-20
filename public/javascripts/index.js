@@ -1,3 +1,3 @@
-(function () {
-  console.log('DOM loaded');
-}())
+(() => {
+  return console.log('DOM loaded')
+})()
