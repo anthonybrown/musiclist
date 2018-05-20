@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  h1= title
+  p #{title}, is music app 🤩 to track your albums and artists 🌈
+  p
+    | You know, React is going to handle the UI, how fucking cool is that?
+    | Oh, you say
+
+  blockquote
+    | "it's common to have React or Angular in an app now a days"?
+  p
+    | Well, I guess you're right.
+
+  p
+    | Pug allows us to use JavaScript in our pug files:
+
+  p
+    = '- var friends = 543'
+  p
+    = 'case friends'
+  p
+    = ' when 0'
+  p
+    = 'you have a friend'
+  p
+    = 'default'
+  p
+    = 'you have #{friends} friend'
+    
+  - var friends = 543
+  case friends
+    when 0
+      p you have no friends
+    when 1
+      p youhave a friend
+    default
+      p you have #{friends} friends
+
+  p 
+    em
+      strong  
+        | My list of programming languages listed by using a loop.
+  p
+    em  
+      strong listed in perference and experience
+  
+  -
+     var list = ['JavaScript', 'C++', 'Python', 'Ruby', 'Elixr', 'Haskell']
+  each item in list
+    li= item
+ 
+  p
+    = 'This is some harmful code that is escaped' + '<script>alert("xss attack")</script>'
+
+  p= 'This code is' + ' <escaped>!'
+
+  p
+    strong
+      | some code: 
+    br
+    code 
+      | var path = require('path');
+      br  
+      | var express = require('express');
+      br
+      | var http = require('http');
