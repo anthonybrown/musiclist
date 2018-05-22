@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
 
 ::selection {
-  background: rgb(255, 186, 244);
-  color: rgb(132, 255, 75);
+  background: rgba(255, 186, 244, 1);
+  color: rgba(233, 255, 75, 1);
 }
 
 ::-webkit-selection {
   background: rgb(255, 186, 244);
-  color: rgb(132, 255, 75)
+  color: rgba(233, 255, 75, 0.9);
 }
 
 ::-moz-selection {
   background: rgb(255, 186, 244);
-  color: rgb(132, 255, 75)
+  color: rgba(233, 255, 75, 0.9);
 }
 
 
@@ -46,6 +46,12 @@ h1 {
   font-size: 2.75rem;
 }
 
+strong::selection,
+blockquote::selection,
+li::selection {
+  color: #333;
+  text-shadow: 0.0875em 0.025em 0 rgba(135, 252, 29, 1);
+}
 h1::selection,
 h2::selection,
 h3::selection,
@@ -138,11 +144,11 @@ a {
 }
 
 blockquote {
-  padding: 0 0.75em;
-  color: rgba(95, 104, 114, 0.5);
-  border-left: 0.33em solid #dfe2e5;
+  padding: 0 1.75em;
+  color: rgba(95, 104, 114, 0.67);
+  border-left: 0.33em solid rgba(176, 190, 204, 1);
   margin: 0 0 0 1.75rem;
   font-style: italic;
   font-variant: common-ligatures;
-
+  line-height: 3;
 }
