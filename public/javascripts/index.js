@@ -1,3 +1,1 @@
-(() => {
-  return console.log('DOM loaded')
-})()
+(() => console.log('DOM loaded'))(); // eslint-disable-line
