@@ -1,15 +1,17 @@
-const express = require('express')
-const router  = express.Router()
+const express = require('express');
 
-const User = require('../../models/user')
+const router = express.Router();
+const User   = require('../../models/user');
 
-router.get('/list', (req, res, next) => {
+router.get('/list', (req, res) => {
   User.find((err, users) => {
     if (err) {
-      res.send(err)
+      res.send(err);
     }
-    res.json(users)
-  })
-})
 
-module.exports = router
+    return res.json(users);
+  });
+});
+
+module.exports = router;
+
