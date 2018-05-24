@@ -1,4 +1,3 @@
-/* global describe, it, expect */
 const request = require('supertest');
 
 // top level of this test suite: the entire user API
