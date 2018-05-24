@@ -1,27 +1,40 @@
 // JS promises
-function addExtra(price) {
 
-  return new Promise(function(resolve, reject) {
-    if (price > 2) reject('Price cannot exceed 3')
+let x = 0;
 
-    setTimeout(function() {
-      resolve(price + 1)
-    }, 1000)
-  })
+async function test() {
+  x += await 2;
+  console.log(x);
 }
 
-addExtra(1)
-  .then(addExtra)
-  .then(addExtra)
-  .then(function(newPrice) {
-  console.log(newPrice);
-}).catch(function(error) {
-  console.log(error);
-})
+test()
+
+x += 1;
+console.log(x);
+
+// function addExtra(price) {
+
+// return new Promise(function(resolve, reject) {
+// if (price > 2) reject('Price cannot exceed 3')
+
+// setTimeout(function() {
+// resolve(price + 1)
+// }, 1000)
+// })
+// }
+
+// addExtra(1)
+// .then(addExtra)
+// .then(addExtra)
+// .then(function(newPrice) {
+// console.log(newPrice);
+// }).catch(function(error) {
+// console.log(error);
+// })
 
 
 
-// Classic callback 
+// Classic callback
 // function addExtra(price, cb) {
 //   if (price > 2) {
 //     cb(false, 'Price cannot exceed 3')

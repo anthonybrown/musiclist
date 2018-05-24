@@ -12,8 +12,8 @@ block content
   p
     | Well, I guess you're right.
 
-  p
-    | Pug allows us to use JavaScript in our pug files:
+  h3
+    | Pug allows us to use JavaScript in our template files:
 
   p
     = '- var friends = 543'
@@ -50,7 +50,7 @@ block content
   each item in list
     li= item
 
-  p
+  h6
     = 'This is some harmful code that is escaped' + '<script>alert("xss attack")</script>'
 
   h2 The random number is: 
@@ -60,6 +60,6 @@ block content
     when 13
       h2 lucky number #{randomNumber} 🍀 🍀 🍀
     when 100
-      h2 you hit a hundred 🍿 🍿 🍿
+      h2 you hit a hundred 🍿 🍿 🍿 #{randomNumber} 🍿 🍿 🍿
     default
-      h2= randomNumber + '  🌈  🔥  🌈'
+      h2= randomNumber + '  🌈  🔥  🌈 🔥'

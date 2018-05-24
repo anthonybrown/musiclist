@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= '🤖 ☠️ 🤖 ☠️ 🤖 ☠️  ' + message + ' 🤖 ☠️ 🤖 ☠️ 🤖 ☠️'
+  h1= `🤖 ☠️ 🤖 ☠️ 🤖 ☠️  ${message} 🤖 ☠️ 🤖 ☠️ 🤖 ☠️`
   h2 Sorry, the page doesn't exsist.
   h2= error.status + ' you know what that means. Below is a stack trace so you can fix your route'
   pre #{error.stack}
