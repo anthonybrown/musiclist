@@ -17,13 +17,7 @@ describe('The User API', () => {
     // second, expect the array to have something in it.
     expect(res.body.length).toBeGreaterThan(0);
     // third, expect the username of the first returned user to be `adiminstrator`
-<<<<<<< HEAD
-    expect(res.body[0].username).toBe('administrator')
-    expect(res.body[1].username).toBe('peaches')
-  })
-})
-=======
     expect(res.body[0].username).toBe('administrator');
+    expect(res.body[1].username).toBe('peaches');
   });
 });
->>>>>>> dev
