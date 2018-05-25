@@ -15,8 +15,8 @@ const expressSession = require('express-session')({
 const User = require('./models/user');
 
 const indexRouter = require('./routes/index');
-const api = require('./routes/api/index');
-const users = require('./routes/api/users');
+const api         = require('./routes/api/index');
+const users       = require('./routes/api/users');
 
 const app = express();
 

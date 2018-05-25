@@ -1,1 +1,1 @@
-(() => console.log('DOM loaded'))(); // eslint-disable-line
+(() => console.log('Hello, React'))();
