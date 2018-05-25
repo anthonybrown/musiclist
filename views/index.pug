@@ -53,10 +53,19 @@ block content
   h6
     = 'This is some harmful code that is escaped' + '<script>alert("xss attack")</script>'
 
-  h2 The random number is: 
+  h4 Your random number is: 
 
+  //- this is a switch statement in pug
   - var randomNumber = Math.floor(Math.random() * 100 + 1)
   case randomNumber
+    when 1
+      h2 #{randomNumber} is the loneliest #️⃣
+    when 7
+      h2 my favorite number #{randomNumber} 🎉 🎯 ⚡ 💲 ⚔️
+    when 10
+      h2 oh, a dime 🃏 is a 👧🏻 that's a #{randomNumber} 🍰 🍭 👀
+    when 11
+      h2 well, it's #{randomNumber} 🎸, you know, it's one more than 10!    
     when 13
       h2 lucky number #{randomNumber} 🍀 🍀 🍀
     when 100
