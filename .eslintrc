@@ -2,10 +2,13 @@
   "extends": "airbnb",
   "plugins": ["jest"],
   "env": {
-    "jest/globals": true
+    "jest/globals": true,
+    "browser": true,
+    "node": true
   },
   "rules": {
-    "no-unused-vars": ["error", {"argsIgnorePattern": "next"}],
-    "no-multi-spaces": 0
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "no-multi-spaces": 0,
+    "no-comma-dangle": 0
   }
 }
