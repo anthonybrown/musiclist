@@ -6,7 +6,7 @@ module.exports = {
     'javascripts/build.js': './src/index.jsx',
   },
   output: {
-    filename: '[name]',
+    filename: '[name]', // [name].[chunkhash].js is for production!!!
     path: path.resolve(__dirname, 'public'),
   },
   resolve: {
@@ -18,6 +18,10 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components|public\/)/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.pug$/,
+        use: 'pug-loader',
       },
     ],
   },

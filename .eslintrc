@@ -8,6 +8,7 @@
   },
   "rules": {
     "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-multi-spaces": 0,
     "no-comma-dangle": 0
   }
